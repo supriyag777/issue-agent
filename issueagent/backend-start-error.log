@@ -1,0 +1,22 @@
+INFO:     Started server process [18872]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+{"timestamp":"2026-10-05T12:30:20Z","level":"INFO","logger":"backend.app.main","message":"request","request_id":"537cb25b3ece41eb","operation":"GET /health","status":"completed","duration_ms":4.85}
+{"timestamp":"2026-10-05T12:31:28Z","level":"INFO","logger":"backend.app.main","message":"request","request_id":"8ed62bd93af347a3","operation":"POST /api/v1/auth/login","status":"completed","duration_ms":19.68}
+{"timestamp":"2026-10-05T12:32:01Z","level":"INFO","logger":"backend.app.main","message":"request","request_id":"48b4dda4441e4bf8","operation":"POST /api/v1/auth/register","status":"completed","duration_ms":126.83}
+{"timestamp":"2026-10-05T12:32:01Z","level":"INFO","logger":"backend.app.main","message":"request","request_id":"21f928f029184a2d","operation":"GET /api/v1/guide/context","status":"completed","duration_ms":16.2}
+{"timestamp":"2026-10-05T12:32:01Z","level":"INFO","logger":"backend.app.main","message":"request","request_id":"330cc14d25f44981","operation":"GET /api/v1/repositories","status":"completed","duration_ms":29.6}
+{"timestamp":"2026-10-05T12:32:01Z","level":"INFO","logger":"backend.app.main","message":"request","request_id":"e7b5809afc7e4f0a","operation":"GET /api/v1/guide/context","status":"completed","duration_ms":6.26}
+{"timestamp":"2026-10-05T12:37:27Z","level":"INFO","logger":"backend.app.main","message":"request","request_id":"8671743ec159406f","operation":"GET /api/v1/repositories","status":"completed","duration_ms":51.36}
+{"timestamp":"2026-10-05T12:37:32Z","level":"INFO","logger":"backend.app.main","message":"request","request_id":"3b5d0b99d8294565","operation":"GET /api/v1/guide/context","status":"completed","duration_ms":7.01}
+{"timestamp":"2026-10-05T12:38:00Z","level":"INFO","logger":"httpx","message":"HTTP Request: GET https://api.github.com/repos/supriyag777/issue-latest1 \"HTTP/1.1 404 Not Found\"","request_id":"59d425e3e9234f9e"}
+{"timestamp":"2026-10-05T12:38:00Z","level":"INFO","logger":"backend.app.main","message":"request","request_id":"59d425e3e9234f9e","operation":"POST /api/v1/repositories/connect","status":"completed","duration_ms":991.61}
+{"timestamp":"2026-10-05T12:38:42Z","level":"INFO","logger":"httpx","message":"HTTP Request: GET https://api.github.com/repos/supriyag777/issue-latest \"HTTP/1.1 404 Not Found\"","request_id":"a2474299cd8e4ad5"}
+{"timestamp":"2026-10-05T12:38:42Z","level":"INFO","logger":"backend.app.main","message":"request","request_id":"a2474299cd8e4ad5","operation":"POST /api/v1/repositories/connect","status":"completed","duration_ms":678.47}
+{"timestamp":"2026-10-05T12:39:25Z","level":"INFO","logger":"backend.app.main","message":"request","request_id":"8d42334a2796467d","operation":"POST /api/v1/guide/ask","status":"completed","duration_ms":6.89}
+{"timestamp":"2026-10-05T12:39:29Z","level":"INFO","logger":"backend.app.main","message":"request","request_id":"508d56799a8f4cce","operation":"POST /api/v1/guide/ask","status":"completed","duration_ms":9.01}
+{"timestamp":"2026-10-05T12:39:34Z","level":"INFO","logger":"backend.app.main","message":"request","request_id":"0e2eb3ce78dc47fd","operation":"POST /api/v1/guide/ask","status":"completed","duration_ms":4.66}
+{"timestamp":"2026-10-05T12:39:38Z","level":"INFO","logger":"backend.app.main","message":"request","request_id":"892c4e36045549e4","operation":"POST /api/v1/guide/ask","status":"completed","duration_ms":2.22}
+{"timestamp":"2026-10-05T12:39:39Z","level":"INFO","logger":"backend.app.main","message":"request","request_id":"8cdeebbaef5d4063","operation":"POST /api/v1/guide/ask","status":"completed","duration_ms":3.19}
+{"timestamp":"2026-10-05T12:39:41Z","level":"INFO","logger":"backend.app.main","message":"request","request_id":"7479706c870c4d54","operation":"POST /api/v1/guide/ask","status":"completed","duration_ms":3.61}

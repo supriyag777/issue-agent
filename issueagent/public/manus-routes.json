@@ -1,0 +1,13 @@
+{
+  "routes": [
+    {"path":"/", "title":"AI GitHub Issue Agent"},
+    {"path":"/login", "title":"Log in"},
+    {"path":"/register", "title":"Create account"},
+    {"path":"/dashboard", "title":"Dashboard"},
+    {"path":"/repositories", "title":"Repositories"},
+    {"path":"/repositories/:id", "title":"Repository"},
+    {"path":"/issues/:id", "title":"Issue"},
+    {"path":"/analysis/:id", "title":"Analysis"},
+    {"path":"/settings", "title":"Settings"}
+  ]
+}

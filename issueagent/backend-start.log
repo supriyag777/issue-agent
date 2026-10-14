@@ -1,0 +1,16 @@
+INFO:     127.0.0.1:60255 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54729 - "POST /api/v1/auth/login HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:53278 - "POST /api/v1/auth/register HTTP/1.1" 201 Created
+INFO:     127.0.0.1:64844 - "GET /api/v1/guide/context?path=%2Fdashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64843 - "GET /api/v1/repositories HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62539 - "GET /api/v1/guide/context?path=%2Fdashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52607 - "GET /api/v1/repositories HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54936 - "GET /api/v1/guide/context?path=%2Frepositories HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63483 - "POST /api/v1/repositories/connect HTTP/1.1" 502 Bad Gateway
+INFO:     127.0.0.1:56486 - "POST /api/v1/repositories/connect HTTP/1.1" 502 Bad Gateway
+INFO:     127.0.0.1:63949 - "POST /api/v1/guide/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63141 - "POST /api/v1/guide/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53933 - "POST /api/v1/guide/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "POST /api/v1/guide/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61914 - "POST /api/v1/guide/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56706 - "POST /api/v1/guide/ask HTTP/1.1" 200 OK

@@ -1,0 +1,11 @@
+export type User = { id: number; name: string; email: string; created_at: string }
+export type Repository = { id: number; owner: string; name: string; full_name: string; description: string; default_branch: string; language: string; stars: number; forks: number; open_issues: number; updated_at: string; provider_mode: 'live' | 'demo' | 'unavailable' }
+export type Issue = { id: number; github_number: number; title: string; body: string; state: string; labels: string[]; author: string; comments_count: number; created_at: string; updated_at: string; comments: { author?: string; body?: string; created_at?: string }[]; html_url: string }
+export type CodeChunk = { filename: string; language: string; start_line: number; end_line: number; code: string; relevance: number }
+export type FileChange = { path: string; change_type: 'add' | 'modify' | 'delete'; explanation: string; patch: string; new_content?: string | null }
+export type AnalysisResult = { summary: string; severity: 'low' | 'medium' | 'high' | 'critical'; root_cause: string; affected_files: string[]; affected_functions: string[]; solution: string; implementation_plan: string[]; testing_plan: string[]; risk_level: 'low' | 'medium' | 'high'; keywords: string[]; technologies: string[]; file_changes: FileChange[] }
+export type Analysis = { id: number; issue_id: number; repository_id: number; status: string; provider_mode: string; result?: AnalysisResult | null; context: CodeChunk[]; error: string; created_at: string }
+export type PullRequest = { id: number; change_id: number; github_number: number; url: string; title: string; draft: boolean; status: string; created_at: string }
+export type Change = { id: number; analysis_id: number; status: string; branch_name: string; diff: string; files: FileChange[]; approved_at?: string | null; test_status: string; test_output: string; commit_sha: string; pull_request?: { id: number; number: number; url: string; draft: boolean; status: string } | null }
+export type Dashboard = { repository: Repository; stats: Record<string, number>; recent_issues: Issue[]; recent_analyses: Analysis[]; changes: Change[]; pull_requests: PullRequest[] }
+export type AuthResponse = { access_token: string; token_type: string; user: User }
